@@ -1,4 +1,4 @@
-/* var config = {
+ var config = {
     apiKey: "AIzaSyD3-RMPYfcuA_JpdX1kw0wGIFtcD_nHnFg",
     authDomain: "coding-bootcamp-firebase.firebaseapp.com",
     databaseURL: "https://coding-bootcamp-firebase.firebaseio.com",
@@ -7,7 +7,7 @@
     messagingSenderId: "575573294033"
   };
 
-  var database = fire.datebase(); */
+  var database = fire.datebase(); 
   var myIndex = 0;
   carousel();
   
