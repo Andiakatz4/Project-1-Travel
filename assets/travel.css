@@ -1,0 +1,47 @@
+.mySlides {display:none;
+    opacity:0.8;
+    object-fit:cover}
+body, html {
+    height: 100%;
+    margin: 0;
+    background-color:	#262626;
+}
+    h2 {
+      text-align:center;
+      margin:0px;
+      color:white;
+      font-family:kano;
+      font-size:25px;
+    }
+
+.label{
+    text-align: center;
+}
+
+.searchform label, 
+.searchform input {
+  color: #737373;
+  float: left;
+  vertical-align: baseline;
+}
+
+.searchform input[type=search] {
+  font: 1em/1.618 Open Sans, Arial, Sans-serif;
+  border: .125em solid white;
+  border-width: 0 0 3px;
+  background-color:rgba(255,255,255,0.4);
+  padding: .1875em .375em;
+  width: 80%;
+}
+
+.searchform input[type=search]:focus {
+  border-color: white;
+  color: #262626;
+  background-color:rgba(255,255,255,0.4);
+  outline: 0;
+
+}
+
+@media only screen and (min-width: 48em) {
+  .searchform input[type=search]{ width: 180%; }
+}
