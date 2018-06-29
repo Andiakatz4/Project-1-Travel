@@ -10,8 +10,8 @@ body, html {
       text-align:center;
       margin:0px;
       color:white;
-      font-family:kano;
-      font-size:25px;
+      font-family: 'Poppins', sans-serif;
+      font-size:22px;
     }
 
 .label{
@@ -23,15 +23,17 @@ body, html {
   color: #737373;
   float: left;
   vertical-align: baseline;
+  height:40px;
 }
 
 .searchform input[type=search] {
-  font: 1em/1.618 Open Sans, Arial, Sans-serif;
   border: .125em solid white;
   border-width: 0 0 3px;
   background-color:rgba(255,255,255,0.4);
   padding: .1875em .375em;
   width: 80%;
+  font-size: 20px;
+
 }
 
 .searchform input[type=search]:focus {
@@ -44,4 +46,23 @@ body, html {
 
 @media only screen and (min-width: 48em) {
   .searchform input[type=search]{ width: 180%; }
+}
+
+.orilabel{
+    text-align:center;
+}
+h1{
+    color:white;
+    font-family: 'Poppins', sans-serif;
+    font-size:120px;
+    opacity:0.9;  
+}
+a{
+    color:white;
+}
+a:hover {
+    color: white;
+}
+a:visited {
+    color: white;
 }
