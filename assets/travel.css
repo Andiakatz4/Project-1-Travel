@@ -46,29 +46,25 @@ body, html {
   .searchform input[type=search]{ width: 180%; }
 }
 
-
-.button-restaurants {
-    background: url("http://www.iea.org/media/news/2017/171113WEO2017MainImage.jpg");
-    background-size: 100px 80px;
-    align-content: center;
+.button {
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIQ0UqsrfeJItfFuWas-Kx4SGTKnAuC6VNYxst58ze7ImVmXuMpw");
+    color: white;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    height: 100px;
+    width: 100px;
+    background-size: cover;
+    background-position: 100%;
 }
 
-.button-coffee {
-    background-image: url("http://www.iea.org/media/news/2017/171113WEO2017MainImage.jpg");
-    background-size: 100px 80px;
-}
+.button5 {border-radius: 100%;}
 
-.button-hotels {
-    background-image: url("http://www.iea.org/media/news/2017/171113WEO2017MainImage.jpg");
-    background-size: 100px 80px;
-}
-
-.button-events {
-    background-image: url("http://www.iea.org/media/news/2017/171113WEO2017MainImage.jpg");
-    background-size: 100px 80px;
-}
-
-.button-others {
-    background-image: url("http://www.iea.org/media/news/2017/171113WEO2017MainImage.jpg");
-    background-size: 100px 80px;
+.container {
+    text-align: center;
+    text-emphasis: bold;
+    image-orientation: center;
 }
