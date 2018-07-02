@@ -1,0 +1,19 @@
+
+/* this is all the code for the second page wchich displays all the map and translate features*/
+
+#map {
+    height: 400px;
+    /* The height is 400 pixels */
+    width: 100%;
+    /* The width is the width of the web page */
+}
+
+body {
+    background-color: darkcyan;
+}
+
+/* this is all the css for the main page index.html*/
+
+
+
+
