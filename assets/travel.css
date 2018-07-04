@@ -73,7 +73,6 @@ a:visited {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    position: relative;
     height:210px;
   }
  .hero-text{
@@ -147,8 +146,11 @@ figcaption{
 
 }
 #map {
+    align-content: center;
+
     height: 400px;
     /* The height is 400 pixels */
-    width: 100%;
+    width: 80%;
+    margin:30px;
     /* The width is the width of the web page */
 }

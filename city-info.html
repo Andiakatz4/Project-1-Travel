@@ -22,15 +22,12 @@
             </h2>
         </div>
     </div>
-    <div id="map"></div>
-
-
-    <div class="container" style="width:100%">
+    <div class="container-fluid">
         <div class="row">
-            <div class="col-sm-2"></div>
+                <div class="col-sm-2"></div>
             <div class="col-sm-2">
                 <figure>
-                    <img class="buttonImg" id="fourth-button" src="assets/Images/restaurants.png" alt="other">
+                    <img class="buttonImg" id="first-button" src="assets/Images/restaurants.png" alt="other">
                     <figcaption>Restaurants</figcaption>
                 </figure>
             </div>
@@ -41,8 +38,8 @@
             </div>
             <div class="col-sm-2">
                 <figure>
-                    <img class="buttonImg" id="third-button" src="assets/Images/photos.png" alt="photos">
-                    <figcaption>Photos</figcaption>
+                    <img class="buttonImg" id="third-button" src="assets/Images/museum.png" alt="photos">
+                    <figcaption>Museums</figcaption>
                 </figure>
             </div>
             <div class="col-sm-2">
@@ -54,15 +51,56 @@
             <div class="col-sm-2"></div>
         </div>
     </div>
-    <input id="address" type="textbox" value="Sydney, NSW">
-    <input id="submit" type="button" value="Geocode">
+   
+    <div id="map"></div>
+    <div id="floating-panel">
+        <input id="address" type="textbox" value="Sydney, NSW">
+        <input id="submit" type="button" value="Geocode"> Place Type
+
+        <select id="firstPlaceType">
+        <option value="restaurant">Restaurants</option>
+        </select>
+        <select id="secondPlaceType">
+            <option value="lodging">Hotels</option>
+
+            <!-- <option value="amusement_park">Amusement Parks</option>
+                    <option value="aquarium">Aquariums</option>
+                    <option value="art_gallery">Art Galleries</option>
+                    <option value="atm">ATM</option>
+                    <option value="bakery">Bakeries</option>
+                    <option value="bank" selected="selected">Banks</option>
+                    <option value="bar">Bars</option>
+                    <option value="bus_station">Bus Stations</option>
+                    <option value="cafe">Coffee</option>
+                    <option value="campground">Campgrounds</option>
+                    <option value="car_rental">Car Rental</option>
+                    <option value="casino">Casinos</option>
+                    <option value="gas_station">Gas</option>
+                    <option value="hospital">Hospitals</option>
+                    <option value="lodging">Hotels</option>
+                    <option value="movie_theater">Movie Theaters</option>
+                    <option value="museum">Museums</option>
+                    <option value="night_club">Night Clubs</option>
+                    <option value="parking">Parking</option>
+                    <option value="police">Police Stations</option>
+                    <option value="hospital">Hospitals</option>
+                    <option value="restaurant">Restaurants</option>
+                    <option value="shopping_mall">Malls</option>
+                    <option value="subway_station">Subway Stations</option>
+                    <option value="train_station">Train Stations</option>
+                    <option value="zoo">Zoos</option> -->
+        </select>
+        <select id="thirdPlaceType">
+            <option value="museum">Museums</option>
+        </select>
+        
+    </div>
     <div class="footer">
-        <p id="footerDiv">CAROUSEL</p>
-        <img class="indexImg" src="assets/images/ftag.png">
-        <img class="indexImg" src="assets/images/instaTag.png">
-        <img class="indexImg" src="assets/images/mailTag.png">
-    </div>
-    </div>
+            <p id="footerDiv">CAROUSEL</p>
+            <img class="indexImg" src="assets/images/ftag.png">
+            <img class="indexImg" src="assets/images/instaTag.png">
+            <img class="indexImg" src="assets/images/mailTag.png">
+        </div>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
@@ -76,7 +114,7 @@
 
 
 
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD97RWhv1LtFuUnfSvUBvRwqoIYYmdzx7o&libraries=places&callback=initMap">
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD97RWhv1LtFuUnfSvUBvRwqoIYYmdzx7o&libraries=places">
     </script>
     <script src="assets/city-info.js"></script>
 
