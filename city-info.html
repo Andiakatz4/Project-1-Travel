@@ -32,6 +32,7 @@
                 </figure>
             </div>
             <div class="col-sm-2">
+                <figure>
                 <img class="buttonImg" id="second-button" src="assets/Images/hotels.png" alt="hotels">
                 <figcaption>Hotels</figcaption>
                 </figure>
@@ -44,8 +45,8 @@
             </div>
             <div class="col-sm-2">
                 <figure>
-                    <img class="buttonImg" id="fourth-button" src="assets/Images/other.png" alt="other">
-                    <figcaption>Other</figcaption>
+                    <img class="buttonImg" id="fourth-button" src="assets/Images/translate.png" alt="other">
+                    <figcaption>Translate</figcaption>
                 </figure>
             </div>
             <div class="col-sm-2"></div>
@@ -62,39 +63,85 @@
         </select>
         <select id="secondPlaceType">
             <option value="lodging">Hotels</option>
-
-            <!-- <option value="amusement_park">Amusement Parks</option>
-                    <option value="aquarium">Aquariums</option>
-                    <option value="art_gallery">Art Galleries</option>
-                    <option value="atm">ATM</option>
-                    <option value="bakery">Bakeries</option>
-                    <option value="bank" selected="selected">Banks</option>
-                    <option value="bar">Bars</option>
-                    <option value="bus_station">Bus Stations</option>
-                    <option value="cafe">Coffee</option>
-                    <option value="campground">Campgrounds</option>
-                    <option value="car_rental">Car Rental</option>
-                    <option value="casino">Casinos</option>
-                    <option value="gas_station">Gas</option>
-                    <option value="hospital">Hospitals</option>
-                    <option value="lodging">Hotels</option>
-                    <option value="movie_theater">Movie Theaters</option>
-                    <option value="museum">Museums</option>
-                    <option value="night_club">Night Clubs</option>
-                    <option value="parking">Parking</option>
-                    <option value="police">Police Stations</option>
-                    <option value="hospital">Hospitals</option>
-                    <option value="restaurant">Restaurants</option>
-                    <option value="shopping_mall">Malls</option>
-                    <option value="subway_station">Subway Stations</option>
-                    <option value="train_station">Train Stations</option>
-                    <option value="zoo">Zoos</option> -->
         </select>
         <select id="thirdPlaceType">
             <option value="museum">Museums</option>
         </select>
         
     </div>
+    <div id="translateTable">
+    <table border="0" cellpadding="10" cellspacing="0" align="center">
+            <tr>
+                <td>
+                    Translate from:
+                </td>
+                <td>
+                    <select id="ddlSource">
+                        <option value="ZH">Chinese (Mandarin)</option>
+                        <option value="CS">Czech</option>
+                        <option value="DA">Danish</option>
+                        <option value="NL">Dutch</option>
+                        <option value="EN" selected="selected">English</option>
+                        <option value="ET">Estonian</option>
+                        <option value="FR">French</option>
+                        <option value="KA">Georgian</option>
+                        <option value="DE">German</option>
+                        <option value="HI">Hindi</option>
+                        <option value="HU">Hungarian</option>
+                        <option value="LA">Latin</option>
+                        <option value="LV">Latvian</option>
+                        <option value="LT">Lithuanian</option>
+                        <option value="SR">Serbian</option>
+                        <option value="RU">Russian</option>
+                        <option value="CY">Welsh</option>
+                    </select>
+                </td>
+                <td>
+                </td>
+                <td>
+                    To:
+                </td>
+                <td>
+                    <select id="ddlTarget">
+                        <option value="ZH">Chinese (Mandarin)</option>
+                        <option value="CS">Czech</option>
+                        <option value="DA">Danish</option>
+                        <option value="NL">Dutch</option>
+                        <option value="EN">English</option>
+                        <option value="ET">Estonian</option>
+                        <option value="FR" selected="selected">French</option>
+                        <option value="KA">Georgian</option>
+                        <option value="DE">German</option>
+                        <option value="HI">Hindi</option>
+                        <option value="HU">Hungarian</option>
+                        <option value="LA">Latin</option>
+                        <option value="LV">Latvian</option>
+                        <option value="LT">Lithuanian</option>
+                        <option value="RU">Russian</option>
+
+                        <option value="SR">Serbian</option>
+                        <option value="CY">Welsh</option>
+                        <option value="XH">Xhosa</option>
+                    </select>
+                </td>
+                <td>
+                    <input type="button" id="btnTranslate" value="Translate" />
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3" align="left">
+                    <textarea id="txtSource" rows="10" cols="30"></textarea>
+                </td>
+                <td>
+                </td>
+                <td colspan="3" align="right">
+                    <textarea id="txtTarget" rows="10" cols="30"></textarea>
+                </td>
+                <td>
+                </td>
+            </tr>
+            </table>
+        </div>
     <div class="footer">
             <p id="footerDiv">CAROUSEL</p>
             <img class="indexImg" src="assets/images/ftag.png">
