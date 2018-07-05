@@ -2,7 +2,7 @@ loadTitle();
 
 $("#translateTable").hide();
 function loadTitle() {
-    $(".secondTitle").append(localStorage.name);
+    $(".hero-text span").text(localStorage.name);
 
 }
 function myFunction() {
@@ -421,14 +421,6 @@ function decodeHtml(html) {
     return txt.value;
 }
 
-
-
-
-
-
-
-
-
-
-
-
+$(document).ready(function() {
+    $('.hero-text').textfill({maxFontPixels: 0});
+});
