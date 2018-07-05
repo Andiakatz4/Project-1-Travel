@@ -41,7 +41,7 @@ function myFunction() {
                     location: results[0].geometry.location,
                     radius: 20000,
                     type: [$(".secondTitle").val()]
-                }, callback);
+                });
 
 
                 function callback(results, status) {
@@ -404,11 +404,22 @@ $("#translateTable").show();
 
 });
 
+$("#btnTranslate").click(function () {
+    var url = "https://translation.googleapis.com/language/translate/v2?key=AIzaSyD97RWhv1LtFuUnfSvUBvRwqoIYYmdzx7o";
+    url += "&source=" + $("#ddlSource").val();
+    url += "&target=" + $("#ddlTarget").val();
+    url += "&q=" + escape($("#txtSource").val());
+    $.getJSON(url, function (data, status) {
+        console.log(data.data.translations[0].translatedText)
+        $("#txtTarget").val(decodeHtml(data.data.translations[0].translatedText));
+    });
+});
 
-// var js_file = document.createElement('script');
-//     js_file.type = 'text/javascript';
-//     js_file.src = 'https://maps.googleapis.com/maps/api/js?key=AIzaSyD97RWhv1LtFuUnfSvUBvRwqoIYYmdzx7o&libraries=places&callback=initMap'
-//     document.getElementsByTagName('head')[0].appendChild(js_file);
+function decodeHtml(html) {
+    var txt = document.createElement("textarea");
+    txt.innerHTML = html;
+    return txt.value;
+}
 
 
 
