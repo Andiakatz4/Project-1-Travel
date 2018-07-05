@@ -1,12 +1,17 @@
 loadTitle();
-// initMap()
+
 $("#translateTable").hide();
 function loadTitle() {
     $(".secondTitle").append(localStorage.name);
 
 }
+
 $("#floating-panel").hide();
 $("#first-button").on("click", function () {
+    $(this).css("background-color", "#f1f3f4");
+    $("#second-button").css("background-color", "white");
+    $("#third-button").css("background-color", "white");
+    $("#fourth-button").css("background-color", "white");
     $("#translateTable").hide();
     $("#map").show();
     function initMap() {
@@ -100,6 +105,11 @@ $("#first-button").on("click", function () {
     initMap();
 });
 $("#second-button").on("click", function () {
+    $(this).css("background-color", "#f1f3f4");
+    $("#first-button").css("background-color", "white");
+    $("#third-button").css("background-color", "white");
+    $("#fourth-button").css("background-color", "white");
+
     $("#firstPlaceType").hide();
     $("#translateTable").hide();
     $("#map").show();
@@ -195,6 +205,10 @@ $("#second-button").on("click", function () {
 });
 
 $("#third-button").on("click", function () {
+    $(this).css("background-color", "#f1f3f4");
+    $("#first-button").css("background-color", "white");
+    $("#second-button").css("background-color", "white");
+    $("#fourth-button").css("background-color", "white");
     $("#firstPlaceType").hide();
     $("#secondPlaceType").hide();
     $("#translateTable").hide();
@@ -289,6 +303,10 @@ $("#third-button").on("click", function () {
 });
 
 $("#fourth-button").on("click",function(){
+    $(this).css("background-color", "#f1f3f4");
+    $("#first-button").css("background-color", "white");
+    $("#second-button").css("background-color", "white");
+    $("#third-button").css("background-color", "white");
 $("#map").hide();
 $("#translateTable").show();
 
