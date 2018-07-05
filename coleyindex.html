@@ -88,39 +88,41 @@
         <div id="map"></div>
         <div id="floating-panel">
             <input id="address" type="textbox" value="Sydney, NSW">
-            <input id="submit" type="button" value="Geocode"> Place Type
-
-
-            <select id="ddlPlaceType">
-                <option value="airport">Airports</option>
-                <option value="amusement_park">Amusement Parks</option>
-                <option value="aquarium">Aquariums</option>
-                <option value="art_gallery">Art Galleries</option>
-                <option value="atm">ATM</option>
-                <option value="bakery">Bakeries</option>
-                <option value="bank" selected="selected">Banks</option>
-                <option value="bar">Bars</option>
-                <option value="bus_station">Bus Stations</option>
-                <option value="cafe">Coffee</option>
-                <option value="campground">Campgrounds</option>
-                <option value="car_rental">Car Rental</option>
-                <option value="casino">Casinos</option>
-                <option value="gas_station">Gas</option>
-                <option value="hospital">Hospitals</option>
-                <option value="lodging">Hotels</option>
-                <option value="movie_theater">Movie Theaters</option>
-                <option value="museum">Museums</option>
-                <option value="night_club">Night Clubs</option>
-                <option value="parking">Parking</option>
-                <option value="police">Police Stations</option>
-                <option value="hospital">Hospitals</option>
-                <option value="restaurant">Restaurants</option>
-                <option value="shopping_mall">Malls</option>
-                <option value="subway_station">Subway Stations</option>
-                <option value="train_station">Train Stations</option>
-                <option value="zoo">Zoos</option>
-            </select>
-
+            <input id="submit" type="button" value="Geocode">
+            
+                Place Type
+            
+            
+                <select id="ddlPlaceType">
+                    <option value="airport">Airports</option>
+                    <option value="amusement_park">Amusement Parks</option>
+                    <option value="aquarium">Aquariums</option>
+                    <option value="art_gallery">Art Galleries</option>
+                    <option value="atm">ATM</option>
+                    <option value="bakery">Bakeries</option>
+                    <option value="bank" selected="selected">Banks</option>
+                    <option value="bar">Bars</option>
+                    <option value="bus_station">Bus Stations</option>
+                    <option value="cafe">Coffee</option>
+                    <option value="campground">Campgrounds</option>
+                    <option value="car_rental">Car Rental</option>
+                    <option value="casino">Casinos</option>
+                    <option value="gas_station">Gas</option>
+                    <option value="hospital">Hospitals</option>
+                    <option value="lodging">Hotels</option>
+                    <option value="movie_theater">Movie Theaters</option>
+                    <option value="museum">Museums</option>
+                    <option value="night_club">Night Clubs</option>
+                    <option value="parking">Parking</option>
+                    <option value="police">Police Stations</option>
+                    <option value="hospital">Hospitals</option>
+                    <option value="restaurant">Restaurants</option>
+                    <option value="shopping_mall">Malls</option>
+                    <option value="subway_station">Subway Stations</option>
+                    <option value="train_station">Train Stations</option>
+                    <option value="zoo">Zoos</option>
+                </select>
+            
         </div>
         <!--<div id="map"></div>-->
 
@@ -129,7 +131,7 @@
 
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD97RWhv1LtFuUnfSvUBvRwqoIYYmdzx7o&libraries=places&callback=initMap">
     </script>
-    <script type="text/javascript">
+        <script type="text/javascript">
         $("#btnTranslate").click(function () {
             var url = "https://translation.googleapis.com/language/translate/v2?key=AIzaSyD97RWhv1LtFuUnfSvUBvRwqoIYYmdzx7o";
             url += "&source=" + $("#ddlSource").val();
@@ -215,11 +217,11 @@
                             else if (place.price_level == 4) {
                                 priceLev = "$$$$"
                             }
-
-                            html = html + priceLev
-
+                            
+                            html= html + priceLev
+                            
                             infowindow.setContent(html);
-
+               
                             infowindow.open(map, this);
                         });
                     }

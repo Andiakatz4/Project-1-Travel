@@ -26,9 +26,25 @@ $(document).ready(function () {
         if ($("#search-box").val() > "")
             window.location.href = "city-info.html";
         var name = $("#search-box").val().trim();
-        localStorage.name = name;    
+        localStorage.name = name;
 
-    });    
+    });
 });
 
+function initAutocomplete() {
+    // Create the autocomplete object, restricting the search to geographical
+    // location types.
+    autocomplete = new google.maps.places.Autocomplete(
+        /** @type {!HTMLInputElement} */(document.getElementById('search-box')),
+        {types: ['geocode']});
 
+    // When the user selects an address from the dropdown, populate the address
+    // fields in the form.
+    //autocomplete.addListener('place_changed', fillInAddress);
+  }
+
+/*   function fillInAddress() {
+    // Get the place details from the autocomplete object.
+    var place = autocomplete.getPlace();
+
+  } */
