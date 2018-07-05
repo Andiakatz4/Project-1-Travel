@@ -16,51 +16,138 @@
 
 </head>
 
-<body class="secondBod">
-
+<body class="secondBod" onload="myFunction()">
     <div class="hero-image">
         <div class="hero-text">
             <h1 class="secondTitle"></h1>
-            <h2 class="secondTag">
-                <a href="city-info.html">Find Your Adventure</a>
-            </h2>
+            
         </div>
     </div>
-
-    <div id="map"></div>
-
-    <div class="container">
-        <div class="row justify-content-center" style="margin:auto">
-            <figure>
-                <img class="buttonImg" id="fourth-button" src="assets/Images/restaurants.png" alt="other">
-                <figcaption>Restaurants</figcaption>
-            </figure>
-            <figure>
+    <div class="container-fluid">
+        <div class="row">
+                <div class="col-sm-2"></div>
+            <div class="col-sm-2">
+                <figure>
+                    <img class="buttonImg" id="first-button" src="assets/Images/restaurants.png" alt="other">
+                    <figcaption>Restaurants</figcaption>
+                </figure>
+            </div>
+            <div class="col-sm-2">
+                <figure>
                 <img class="buttonImg" id="second-button" src="assets/Images/hotels.png" alt="hotels">
                 <figcaption>Hotels</figcaption>
-            </figure>
-            <figure>
-                <img class="buttonImg" id="third-button" src="assets/Images/photos.png" alt="photos">
-                <figcaption>Photos</figcaption>
-            </figure>
-            <figure>
-                <img class="buttonImg" id="fourth-button" src="assets/Images/other.png" alt="other">
-                <figcaption>Other</figcaption>
-            </figure>
+                </figure>
+            </div>
+            <div class="col-sm-2">
+                <figure>
+                    <img class="buttonImg" id="third-button" src="assets/Images/museum.png" alt="photos">
+                    <figcaption>Museums</figcaption>
+                </figure>
+            </div>
+            <div class="col-sm-2">
+                <figure>
+                    <img class="buttonImg" id="fourth-button" src="assets/Images/translate.png" alt="other">
+                    <figcaption>Translate</figcaption>
+                </figure>
+            </div>
+            <div class="col-sm-2"></div>
         </div>
     </div>
+   
+    <div id="map"></div>
+    <div id="floating-panel">
+        <input id="address" type="textbox" value="Sydney, NSW">
+        <input id="submit" type="button" value="Geocode"> Place Type
 
-    <input id="address" type="textbox" value="Sydney, NSW">
-    <input id="submit" type="button" value="Geocode">
-
-    <div class="footer">
-        <p id="footerDiv">CAROUSEL</p>
-        <img class="indexImg" src="assets/images/ftag.png">
-        <img class="indexImg" src="assets/images/instaTag.png">
-        <img class="indexImg" src="assets/images/mailTag.png">
+        <select id="firstPlaceType">
+        <option value="restaurant">Restaurants</option>
+        </select>
+        <select id="secondPlaceType">
+            <option value="lodging">Hotels</option>
+        </select>
+        <select id="thirdPlaceType">
+            <option value="museum">Museums</option>
+        </select>
+        
     </div>
-
-
+    <div id="translateTable">
+    <table border="0" cellpadding="10" cellspacing="0" align="center">
+            <tr>
+                <td>
+                    Translate from:
+                </td>
+                <td>
+                    <select id="ddlSource">
+                        <option value="ZH">Chinese (Mandarin)</option>
+                        <option value="CS">Czech</option>
+                        <option value="DA">Danish</option>
+                        <option value="NL">Dutch</option>
+                        <option value="EN" selected="selected">English</option>
+                        <option value="ET">Estonian</option>
+                        <option value="FR">French</option>
+                        <option value="KA">Georgian</option>
+                        <option value="DE">German</option>
+                        <option value="HI">Hindi</option>
+                        <option value="HU">Hungarian</option>
+                        <option value="LA">Latin</option>
+                        <option value="LV">Latvian</option>
+                        <option value="LT">Lithuanian</option>
+                        <option value="SR">Serbian</option>
+                        <option value="RU">Russian</option>
+                        <option value="CY">Welsh</option>
+                    </select>
+                </td>
+                <td>
+                </td>
+                <td>
+                    To:
+                </td>
+                <td>
+                    <select id="ddlTarget">
+                        <option value="ZH">Chinese (Mandarin)</option>
+                        <option value="CS">Czech</option>
+                        <option value="DA">Danish</option>
+                        <option value="NL">Dutch</option>
+                        <option value="EN">English</option>
+                        <option value="ET">Estonian</option>
+                        <option value="FR" selected="selected">French</option>
+                        <option value="KA">Georgian</option>
+                        <option value="DE">German</option>
+                        <option value="HI">Hindi</option>
+                        <option value="HU">Hungarian</option>
+                        <option value="LA">Latin</option>
+                        <option value="LV">Latvian</option>
+                        <option value="LT">Lithuanian</option>
+                        <option value="RU">Russian</option>
+                        <option value="SR">Serbian</option>
+                        <option value="CY">Welsh</option>
+                        <option value="XH">Xhosa</option>
+                    </select>
+                </td>
+                <td>
+                    <input type="button" id="btnTranslate" value="Translate" />
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3" align="left">
+                    <textarea id="txtSource" rows="10" cols="30"></textarea>
+                </td>
+                <td>
+                </td>
+                <td colspan="3" align="right">
+                    <textarea id="txtTarget" rows="10" cols="30"></textarea>
+                </td>
+                <td>
+                </td>
+            </tr>
+            </table>
+        </div>
+    <div class="footer">
+            <p id="footerDiv">CAROUSEL</p>
+            <img class="indexImg" src="assets/images/ftag.png">
+            <img class="indexImg" src="assets/images/instaTag.png">
+            <img class="indexImg" src="assets/images/mailTag.png">
+        </div>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
 
@@ -75,7 +162,7 @@
 
 
 
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD97RWhv1LtFuUnfSvUBvRwqoIYYmdzx7o&libraries=places&callback=initMap">
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD97RWhv1LtFuUnfSvUBvRwqoIYYmdzx7o&libraries=places">
     </script>
 
     <script src="assets/city-info.js"></script>
