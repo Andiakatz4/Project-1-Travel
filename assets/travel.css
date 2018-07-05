@@ -76,7 +76,15 @@ a:visited {
     height:210px;
   }
  .hero-text{
+     margin: 0 auto;
+     width: 960px;
+     height: 200px;
+ }
+
+ .hero-text span {
      text-align: center;
+     display: block;
+     color: white;
  }
 
 
